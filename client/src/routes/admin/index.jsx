@@ -1,6 +1,6 @@
-import Dashboard from "@/views/admin/dashboard/index.jsx";
-import Layout from "@/layouts/admin/index.jsx";
 import { Navigate } from "react-router-dom";
+import AdminDashboard from "@/views/admin/dashboard/index.jsx";
+import Layout from "@/layout/index.jsx";
 
 const adminRoutes = [
     {
@@ -13,7 +13,7 @@ const adminRoutes = [
             },
             {
                 path: "dashboard",
-                element: <Dashboard/>
+                element: <AdminDashboard/>
             }
         ]
     }
