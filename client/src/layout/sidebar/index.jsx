@@ -1,27 +1,8 @@
 import { Component, LayoutDashboard, Rows4 } from "lucide-react";
 import NavItem from "../nav-item/index.jsx";
 import { useState } from "react";
+import menu from "@/layout/sidebar/menu-data/index.jsx";
 
-const menuItems = [
-    { to: "/dashboard", icon: LayoutDashboard, label: "Dashboard" },
-    { to: "/ui-elements", icon: Component, label: "UI Elements" },
-    {
-        icon: Rows4,
-        label: "Tables",
-        submenu: [
-            { to: "/tables/multiple", label: "Multiple Tables" },
-            { to: "/tables/single", label: "Single Table" },
-        ],
-    },
-    {
-        icon: Rows4,
-        label: "Not Tables",
-        submenu: [
-            { to: "/tables/not-multiple", label: "Not Multiple Tables" },
-            { to: "/tables/not-single", label: "Not Single Table" },
-        ],
-    },
-];
 
 export default function Sidebar({ isOpen, setIsOpen }) {
     const [openSubmenu, setOpenSubmenu] = useState(null);
@@ -68,7 +49,7 @@ export default function Sidebar({ isOpen, setIsOpen }) {
                     </div>
 
                     <nav className="mt-10">
-                        {menuItems.map((item, index) => (
+                        {menu.map((item, index) => (
                             <NavItem
                                 key={index}
                                 to={item.to}
