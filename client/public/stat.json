@@ -1,0 +1,14 @@
+[
+  {
+    "todayOrders": 120,
+    "yesterdayOrders": 95,
+    "thisMonthOrders": 3200,
+    "lastMonthOrders": 2900,
+    "allTimeSales": 56000,
+    "todayOrdersColor": "blue",
+    "yesterdayOrdersColor": "green",
+    "thisMonthOrdersColor": "red",
+    "lastMonthOrdersColor": "purple",
+    "allTimeSalesColor": "yellow"
+  }
+]
